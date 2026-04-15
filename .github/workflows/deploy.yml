@@ -1,0 +1,29 @@
+name: Deploy naar Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup wrangler authenticatie
+        run: |
+          mkdir -p ~/.wrangler/config
+          cat > ~/.wrangler/config/default.toml << 'TOML'
+          oauth_token = "${{ secrets.WRANGLER_OAUTH_TOKEN }}"
+          expiration_time = "2030-01-01T00:00:00.000Z"
+          refresh_token = "${{ secrets.WRANGLER_REFRESH_TOKEN }}"
+          scopes = ["account:read","user:read","workers:write","workers_kv:write","workers_routes:write","workers_scripts:write","workers_tail:read","d1:write","pages:write","zone:read","ssl_certs:write","ai:write","offline_access"]
+          TOML
+
+      - name: Deploy naar Cloudflare Pages
+        run: npx wrangler@latest pages deploy . --project-name siskohairwaves --branch main --commit-dirty=true
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
