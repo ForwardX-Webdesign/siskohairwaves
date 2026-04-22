@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webshop — SISKO Natural Hairweaves</title>
+  <meta name="description" content="Bestel 100% natuurlijke hairweaves, haarverzorging en benodigdheden in de webshop van SISKO Natural Hairweaves. Snelle levering, topkwaliteit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="SISKO Natural Hairweaves" />
+      </a>
+      <nav aria-label="Hoofdnavigatie">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#kwaliteit">Kwaliteit</a></li>
+          <li><a href="behandelingen.html">Behandelingen</a></li>
+          <li><a href="shop.html" class="actief">Webshop</a></li>
+          <li><a href="index.html#over">Over ons</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="shop.html" class="btn btn-primary" style="font-size:.75rem;padding:.65rem 1.4rem;"><i class="fa-solid fa-bag-shopping"></i> Webshop</a>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero sub-hero">
+    <div class="hero-bg" style="background-image: url('product.jpg'); background-position: center 40%;"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">SISKO Natural Hairweaves</span>
+      <h1>Onze webshop</h1>
+      <p>Bestel hairweaves, professionele haarverzorging en benodigdheden direct online. Altijd de hoogste kwaliteit, snel geleverd.</p>
+      <div class="hero-knoppen">
+        <a href="#producten" class="btn btn-primary">Bekijk producten</a>
+        <a href="index.html" class="btn btn-outline">Terug naar home</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-bar"></div>
+
+  <!-- ═══════════ SHOP ═══════════ -->
+  <section class="sectie sectie-creme" id="producten">
+    <div class="container">
+
+      <span class="sectie-label" style="display:block;text-align:center;">Webshop</span>
+      <h2 class="sectie-titel">Alle producten</h2>
+      <div class="divider"></div>
+
+      <!-- Categorie tabs -->
+      <div class="shop-categorietabs">
+        <button class="tab-btn actief" onclick="filterShop('alle', this)">Alle producten</button>
+        <button class="tab-btn" onclick="filterShop('hairweave', this)">Natural Hairweaves</button>
+        <button class="tab-btn" onclick="filterShop('verzorging', this)">Haarverzorging</button>
+        <button class="tab-btn" onclick="filterShop('benodigdheden', this)">Benodigdheden</button>
+      </div>
+
+      <!-- Productgrid -->
+      <div class="shop-grid" id="shop-grid">
+
+        <!-- ── NATURAL HAIRWEAVES ── -->
+        <div class="product-kaart product-item" data-cat="hairweave">
+          <div class="product-afbeelding">
+            <img src="colorring.jpg" alt="SISKO Natural Hairweave 40cm" />
+            <span class="product-badge">Populair</span>
+          </div>
+          <div class="product-info">
+            <span class="product-categorie">Natural Hairweaves</span>
+            <h3>Natural Hairweave 40cm</h3>
+            <p>100% natuurlijk Remy-haar uit India. Siliconevrij, double drawn en op maat aangebracht.</p>
+            <div class="product-footer">
+              <span class="product-prijs">Op aanvraag</span>
+              <a href="behandelingen.html" class="btn-product">Meer info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-kaart product-item" data-cat="hairweave">
+          <div class="product-afbeelding">
+            <img src="extensions.jpg" alt="SISKO Natural Hairweave 50cm" style="object-position:center 20%;" />
+          </div>
+          <div class="product-info">
+            <span class="product-categorie">Natural Hairweaves</span>
+            <h3>Natural Hairweave 50cm</h3>
+            <p>Voller en langer haar met 100% natuurlijk haar. Remy-gesorteerd voor een perfecte haarval.</p>
+            <div class="product-footer">
+              <span class="product-prijs">Op aanvraag</span>
+              <a href="behandelingen.html" class="btn-product">Meer info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-kaart product-item" data-cat="hairweave">
+          <div class="product-afbeelding">
+            <img src="hero.jpg" alt="SISKO Natural Hairweave 60cm" />
+          </div>
+          <div class="product-info">
+            <span class="product-categorie">Natural Hairweaves</span>
+            <h3>Natural Hairweave 60cm</h3>
+            <p>Maximale lengte en volume. Ethisch verkregen, siliconevrij en aangebracht door een partnersalon.</p>
+            <div class="product-footer">
+              <span class="product-prijs">Op aanvraag</span>
+              <a href="behandelingen.html" class="btn-product">Meer info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── HAARVERZORGING ── -->
+        <div class="product-kaart product-item" data-cat="verzorging">
+          <div class="product-afbeelding" style="background:#f0ece4;display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;padding:2rem;">
+              <div style="font-size:3.5rem;margin-bottom:.5rem;">🧴</div>
+              <p style="font-size:.8rem;color:var(--kleur-subtekst);margin:0;">Davines</p>
+              <p style="font-size:.9rem;font-weight:700;color:var(--kleur-donker);margin:0;">Heart of Glass</p>
+            </div>
+            <span class="product-badge product-badge-nieuw">In stock</span>
+          </div>
+          <div class="product-info">
+            <span class="product-categorie">Haarverzorging</span>
+            <h3>Heart of Glass Shampoo 250ml</h3>
+            <p>Versterkt de blonde kleur van het haar. Met blauw jackfruit-extract en baobab extract voor natuurlijk en behandeld blond haar.</p>
+            <div class="product-footer">
+              <span class="product-prijs">€ 26,00</span>
+              <button class="btn-product" onclick="cartToast(this)"><i class="fa-solid fa-bag-shopping"></i> In winkelwagen</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-kaart product-item" data-cat="verzorging">
+          <div class="product-afbeelding" style="background:#f0ece4;display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;padding:2rem;">
+              <div style="font-size:3.5rem;margin-bottom:.5rem;">🧴</div>
+              <p style="font-size:.8rem;color:var(--kleur-subtekst);margin:0;">Davines</p>
+              <p style="font-size:.9rem;font-weight:700;color:var(--kleur-donker);margin:0;">Heart of Glass</p>
+            </div>
+            <span class="product-badge product-badge-nieuw">In stock</span>
+          </div>
+          <div class="product-info">
+            <span class="product-categorie">Haarverzorging</span>
+            <h3>Heart of Glass Conditioner 250ml</h3>
+            <p>Intensieve conditioner voor blond haar. Versterkt en verbetert de kleur voor een stralend resultaat.</p>
+            <div class="product-footer">
+              <span class="product-prijs">€ 31,00</span>
+              <button class="btn-product" onclick="cartToast(this)"><i class="fa-solid fa-bag-shopping"></i> In winkelwagen</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── BENODIGDHEDEN ── -->
+        <div class="product-kaart product-item" data-cat="benodigdheden">
+          <div class="product-afbeelding">
+            <img src="colorring-swatch.jpg" alt="SISKO Colorring" />
+            <span class="product-badge">In stock</span>
+          </div>
+          <div class="product-info">
+            <span class="product-categorie">Benodigdheden</span>
+            <h3>SISKO Colorring</h3>
+            <p>De officiële SISKO kleurwaaier met alle beschikbare haarkleuren. Onmisbaar voor salons en kapsters bij het bepalen van de perfecte kleurMatch.</p>
+            <div class="product-footer">
+              <span class="product-prijs">€ 40,00</span>
+              <button class="btn-product" onclick="cartToast(this)"><i class="fa-solid fa-bag-shopping"></i> In winkelwagen</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.shop-grid -->
+
+      <!-- Hairweave info banner -->
+      <div style="margin-top:3rem;background:var(--kleur-wit);border-radius:var(--radius);box-shadow:var(--schaduw);padding:2rem 2.5rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+        <div class="kenmerk-icoon" style="flex-shrink:0;"><i class="fa-solid fa-circle-info"></i></div>
+        <div>
+          <h3 style="font-family:var(--font-hoofd);font-size:1.1rem;color:var(--kleur-donker);margin-bottom:.3rem;">Natural Hairweaves worden op aanvraag gemaakt</h3>
+          <p style="margin:0;font-size:.88rem;">Hairweaves zijn een persoonlijk maatwerk product. Neem contact op voor een vrijblijvend adviesgesprek en prijsopgave op maat. We kijken samen naar jouw haartype, gewenste kleur en lengte.</p>
+        </div>
+        <a href="tel:0299675360" class="btn btn-primary" style="flex-shrink:0;white-space:nowrap;"><i class="fa-solid fa-phone"></i> Bel ons</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Toast melding ── -->
+  <div id="cart-toast" style="
+    position:fixed;bottom:2rem;right:2rem;
+    background:var(--kleur-mauve);color:#fff;
+    padding:.9rem 1.5rem;border-radius:var(--radius);
+    font-size:.88rem;font-weight:600;
+    box-shadow:0 8px 24px rgba(74,42,58,0.25);
+    transform:translateY(100px);opacity:0;
+    transition:all .3s ease;z-index:999;
+    display:flex;align-items:center;gap:.75rem;">
+    <i class="fa-solid fa-check"></i> Product toegevoegd aan winkelwagen
+  </div>
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Vragen over een product?</h2>
+      <p>Bel of mail ons — we helpen je graag bij het kiezen van het juiste product of de beste behandeling voor jouw haar.</p>
+      <div class="cta-knoppen">
+        <a href="tel:0299675360" class="btn btn-outline"><i class="fa-solid fa-phone"></i> 0299 675 360</a>
+        <a href="mailto:info@siskohair.nl" class="btn" style="background:var(--kleur-wit);color:var(--kleur-mauve);border:1.5px solid var(--kleur-wit);font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:.9rem 2.2rem;border-radius:2px;"><i class="fa-solid fa-envelope"></i> Mail ons</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-kolom">
+        <img src="logo.png" alt="SISKO Natural Hairweaves" class="footer-logo" />
+        <p>100% natuurlijke hairweaves van de hoogste kwaliteit. Op maat gemaakt voor jouw haar.</p>
+      </div>
+      <div class="footer-kolom">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="behandelingen.html">Behandelingen</a></li>
+          <li><a href="shop.html">Webshop</a></li>
+          <li><a href="index.html#over">Over ons</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-kolom">
+        <h4>Contact</h4>
+        <ul>
+          <li>Tuingracht 3</li>
+          <li>1483 AP De Rijp</li>
+          <li><a href="tel:0299675360">0299 675 360</a></li>
+          <li><a href="mailto:info@siskohair.nl">info@siskohair.nl</a></li>
+        </ul>
+      </div>
+      <div class="footer-kolom">
+        <h4>Volg ons</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/siskohairweaves" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.facebook.com/siskohairweaves" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        </ul>
+        <p style="margin-top:1rem;">KVK: 37132849</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SISKO Natural Hairweaves — Onderdeel van Het Kniphuys</span>
+      <span><a href="mailto:info@siskohair.nl">info@siskohair.nl</a></span>
+    </div>
+  </footer>
+
+  <!-- Shop JavaScript -->
+  <script>
+    function filterShop(cat, btn) {
+      // Tabs updaten
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('actief'));
+      btn.classList.add('actief');
+
+      // Producten filteren
+      document.querySelectorAll('.product-item').forEach(item => {
+        if (cat === 'alle' || item.dataset.cat === cat) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function cartToast(btn) {
+      const toast = document.getElementById('cart-toast');
+      toast.style.transform = 'translateY(0)';
+      toast.style.opacity = '1';
+      setTimeout(() => {
+        toast.style.transform = 'translateY(100px)';
+        toast.style.opacity = '0';
+      }, 2500);
+    }
+  </script>
+
+</body>
+</html>
